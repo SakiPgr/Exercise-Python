@@ -109,3 +109,15 @@ print("\n\n")
 # https://docs.python.org/3.7/library/math.html or this one if this helps
 # https://www.programiz.com/python-programming/modules/math
 
+# 5. Write a Python program which accepts the user's first and last name and print
+# them in reverse order with a space between them.
+
+# My solution
+first_name = input("Please enter your First Name: ")
+last_name = input("Please enter your Last Name: ")
+print("Hello {0} {1}".format(last_name, first_name))
+
+# Solution on the site
+fname = input("Input your First Name : ")
+lname = input("Input your Last Name : ")
+print("Hello " + lname + " " + fname)

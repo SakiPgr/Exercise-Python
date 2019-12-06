@@ -25,6 +25,7 @@ print('\n\n')
 # A list of escape characters can be found here
 # https://python-reference.readthedocs.io/en/latest/docs/str/escapes.html
 
+###################################################################################################
 
 # 2. Write a Python program to get the Python version you are using.
 
@@ -48,6 +49,7 @@ print('\n\n')
 # or this resource https://www.python-course.eu/sys_module.php if this is easier for you. Although
 # written in python 2 there shouldn't be any major difference in using the sys module.
 
+###################################################################################################
 
 # 3. Write a Python program to display the current date and time.
 
@@ -80,6 +82,7 @@ print("\n")
 # https://www.w3schools.com/python/python_datetime.asp or this which has even more examples
 # https://www.programiz.com/python-programming/datetime
 
+###################################################################################################
 
 # 4. Write a Python program which accepts the radius of a circle from the user and compute
 # the area.
@@ -109,6 +112,8 @@ print("\n\n")
 # https://docs.python.org/3.7/library/math.html or this one if this helps
 # https://www.programiz.com/python-programming/modules/math
 
+###################################################################################################
+
 # 5. Write a Python program which accepts the user's first and last name and print
 # them in reverse order with a space between them.
 
@@ -117,7 +122,45 @@ first_name = input("Please enter your First Name: ")
 last_name = input("Please enter your Last Name: ")
 print("Hello {0} {1}".format(last_name, first_name))
 
+# If you want soma examples of the built-in function input() look up the links below
+# https://www.w3schools.com/python/ref_func_input.asp
+# https://www.programiz.com/python-programming/methods/built-in/input
+# And for more info about string format read below 2 good resources
+# https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3
+# https://realpython.com/python-f-strings/
+
 # Solution on the site
 fname = input("Input your First Name : ")
 lname = input("Input your Last Name : ")
 print("Hello " + lname + " " + fname)
+
+###################################################################################################
+
+# 6. Write a Python program which accepts a sequence of comma-separated numbers
+# from user and generate a list and a tuple with those numbers.
+
+# My solution
+numbers_string = input("Please enter the numbers separated with a comma: ")
+numbers_list = numbers_string.split(',')
+numbers_tuple = tuple(numbers_list)
+print(numbers_list, '\n', numbers_tuple)
+
+# For more information about Pythons list and tuple have a look at the sites below
+# For lists
+# https://www.w3schools.com/python/python_lists.asp
+# https://www.programiz.com/python-programming/list
+# For tuples
+# https://www.w3schools.com/python/python_tuples.asp
+# https://www.programiz.com/python-programming/tuple
+
+# Solution on the site. I put it in a string to not cause any problem in
+# further execution
+'''
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)
+'''
+
+###################################################################################################

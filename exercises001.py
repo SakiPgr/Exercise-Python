@@ -164,3 +164,17 @@ print('Tuple : ',tuple)
 '''
 
 ###################################################################################################
+
+# 7. Write a Python program to accept a filename form the user and print the extension of that.
+
+# My solution
+
+user_file = input('Please enter the complete filename : ')
+extension = user_file.split('.')
+print("The file extension of this file is " + "'" + extension[-1] + "'.")
+
+# Solution on the site
+
+filename = input("Input the Filename: ")
+f_extns = filename.split(".")
+print("The extension of the file is : " + repr(f_extns[-1]))

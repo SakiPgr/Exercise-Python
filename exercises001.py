@@ -178,3 +178,17 @@ print("The file extension of this file is " + "'" + extension[-1] + "'.")
 filename = input("Input the Filename: ")
 f_extns = filename.split(".")
 print("The extension of the file is : " + repr(f_extns[-1]))
+
+
+# 8. Write a Python program to display the first and last colors from the following list
+color_list = ["Red", "Green", "White", "Black"]
+
+# My solution
+
+print("The first color in the list is: {}".format(color_list[0]))
+print("The second color in the list is: {}".format(color_list[-1]))
+
+# Solution on the site
+
+print("%s %s" % (color_list[0], color_list[-1]))
+
